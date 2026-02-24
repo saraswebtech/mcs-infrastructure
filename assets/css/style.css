@@ -68,8 +68,8 @@
 
 
  :root {
-   --text-font: "Figtree", serif;
-   --title-font: "Red Rose", serif;
+   --title-font: "Poppins", sans-serif;
+   --text-font: "Lato", sans-serif;
  }
 
 
@@ -1120,11 +1120,11 @@
    position: relative;
    display: block;
    text-align: center;
-   font-size: 18px;
+   font-size: 16px;
    line-height: 27px;
-   padding-top: 15px;
-   padding-bottom: 15px;
-   font-weight: 600;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   font-weight: 500;
    font-family: var(--title-font);
    color: var(--title-color);
    text-transform: capitalize;
@@ -10524,7 +10524,7 @@
  }
 
  .header-style-four .header-lower {
-   padding: 0px 40px;
+   padding: 40px 360px 0px;
  }
 
  .header-style-four .header-lower .outer-container {
@@ -10549,8 +10549,8 @@
  .header-style-four .outer-box .logo-box {
    position: relative;
    display: inline-block;
-   background-color: var(--secondary-color);
-   padding: 21px 29px 21px 30px;
+   /* background-color: var(--secondary-color); */
+   padding: 10px 11px 10px 10px;
  }
 
  .header-style-four .outer-box .user-box {
@@ -10596,34 +10596,27 @@
    display: inline-block;
    font-size: 15px;
    line-height: 22px;
-   color: var(--title-color);
+   color:white;
    text-transform: uppercase;
-   border-bottom: solid;
-   border-width: 3px;
-   border-color: var(--theme-color);
+
  }
 
  .header-style-four .menu-right-content .link a:hover {
-   color: var(--theme-color);
+   color:black;
  }
 
  .header-style-four .menu-right-content {
    gap: 50px;
+   background-color: var(--theme-color);
+   padding: 14px;
+   text-align: center;
+   
  }
 
- .header-style-four .menu-right-content .link a::before {
-   position: absolute;
-   content: '';
-   background-color: var(--theme-color);
-   width: 50px;
-   height: 1px;
-   left: 0px;
-   bottom: -7px;
- }
 
  .header-style-four .outer-container {
    padding: 0px;
-   padding-right: 40px;
+   padding-right: 14px;
  }
 
  .header-style-four .header-lower .main-content {
@@ -10662,7 +10655,7 @@
    position: relative;
    display: flex;
    align-items: center;
-   justify-content: center;
+   /* justify-content: center; */
    gap: 10px;
  }
 
@@ -10693,7 +10686,7 @@
  }
 
  .header-style-four .header-lower .main-menu .navigation>li {
-   padding: 0px 53px;
+   padding: 0px 20px;
    border-right: 1px solid #e0dfdf;
    margin: 0px;
  }
@@ -11398,9 +11391,9 @@
    top: 5px;
  }
 
-  .footer-style-four .widget-title{
-    margin-bottom: 21px;
-  }
+ .footer-style-four .widget-title {
+   margin-bottom: 21px;
+ }
 
  .footer-style-four .links-widget .links-list li {
    position: relative;
