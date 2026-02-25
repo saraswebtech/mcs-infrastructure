@@ -932,7 +932,7 @@
 
  .main-header .outer-container {
    position: relative;
-   padding: 15px;
+   padding: 10px;
    border-bottom: 1px solid #ebe9ef;
  }
 
@@ -4834,9 +4834,9 @@
 
  .news-block-one .inner-box .upper-content {
    position: relative;
-   display: flex;
+   /* display: flex; */
    align-items: center;
-   justify-content: space-between;
+   /* justify-content: space-between; */
    background-color: #f0f4f8;
    padding: 40px;
  }
@@ -5758,7 +5758,7 @@
 
  .banner-style-two .slide-item {
    position: relative;
-   padding: 280px 0px 150px 0px;
+   padding: 310px 0px 150px 0px;
  }
 
  .banner-style-two .slide-item::before {
@@ -10092,8 +10092,8 @@
 
  .contact-section {
    position: relative;
-   padding: 110px 0px 120px 0px;
-   background: linear-gradient(rgba(-1, -1, -1, 0.6), rgba(0, 2, 0, 2)), url(../images/background/faq-bg.jpg);
+   padding: 110px 0px 50px 0px;
+   /* background: linear-gradient(rgba(-1, -1, -1, 0.6), rgba(0, 2, 0, 2)), url(../images/background/faq-bg.jpg); */
    background-size: cover;
    background-repeat: no-repeat;
    opacity: 1;
@@ -10524,7 +10524,7 @@
  }
 
  .header-style-four .header-lower {
-   padding: 40px 360px 0px;
+   padding: 40px 350px 0px;
  }
 
  .header-style-four .header-lower .outer-container {
@@ -10596,13 +10596,13 @@
    display: inline-block;
    font-size: 15px;
    line-height: 22px;
-   color:white;
+   color: white;
    text-transform: uppercase;
 
  }
 
  .header-style-four .menu-right-content .link a:hover {
-   color:black;
+   color: black;
  }
 
  .header-style-four .menu-right-content {
@@ -10610,7 +10610,7 @@
    background-color: var(--theme-color);
    padding: 14px;
    text-align: center;
-   
+
  }
 
 
@@ -11565,7 +11565,7 @@
 
  .page-title {
    position: relative;
-   padding: 157px 0px 160px 0px;
+   padding: 204px 0px 80px 0px;
    border-bottom: 1px solid #e4e9ec;
  }
 
@@ -11573,7 +11573,7 @@
    position: absolute;
    top: 0px;
    right: 0px;
-   width: calc(100% - 375px);
+   width: 100%;
    height: 100%;
    background-size: cover;
    background-repeat: no-repeat;
@@ -11586,9 +11586,9 @@
  }
 
  .page-title .content-box h1 {
-   font-size: 60px;
+   font-size: 40px;
    line-height: 68px;
-   margin-bottom: 11px;
+   margin-bottom: -15px;
  }
 
  .page-title .content-box .bread-crumb {
@@ -11636,14 +11636,14 @@
  .page-title .based-content .inner {
    position: relative;
    display: block;
-   background-color: var(--secondary-color);
-   padding: 50px 45px 46px 50px;
+   background-color: #f0f4f8;
+   padding: 50px 45px 26px 50px;
  }
 
  .page-title .based-content .inner .logo-box {
    position: relative;
    display: block;
-   margin-bottom: 65px;
+   margin-bottom: 37px;
  }
 
  .page-title .based-content .inner .logo-box .logo {
@@ -11684,7 +11684,7 @@
  .page-title .based-content .inner .single-item {
    position: relative;
    display: block;
-   padding-left: 100px;
+   /* padding-left: 100px; */
  }
 
  .page-title .based-content .inner .single-item .shape {
@@ -11698,9 +11698,9 @@
 
  .page-title .based-content .inner .single-item h2 {
    display: block;
-   font-size: 60px;
+   font-size: 41px;
    line-height: 70px;
-   color: #fff;
+   color: #515151;
    margin-bottom: 3px;
  }
 
@@ -11728,7 +11728,7 @@
 
  .page-title .outer-container {
    position: relative;
-   padding-left: 475px;
+   padding-left: 350px;
  }
 
  .page-title .based-content .inner .single-item h2 span {
@@ -11929,7 +11929,7 @@
 
  .contact-style-two {
    position: relative;
-   padding: 120px 0px 90px 0px;
+   padding: 0px 0px 90px 0px;
  }
 
  .contact-style-two .tab-btn-box {
@@ -12040,6 +12040,7 @@
    display: block;
    padding: 23px 20px 30px 20px;
    margin-bottom: 30px;
+   border: 2px solid #11457e;
  }
 
  .info-block-one .inner-box .shape {
@@ -12459,9 +12460,9 @@
  }
 
  .service-details-content h2 {
-   font-size: 40px;
+   font-size: 25px;
    line-height: 48px;
-   margin-bottom: 40px;
+   margin-bottom: 10px;
  }
 
  .service-details-content .image-box {
@@ -12481,9 +12482,9 @@
  }
 
  .service-details-content .text-box h3 {
-   font-size: 30px;
+   font-size: 20px;
    line-height: 38px;
-   margin-bottom: 18px;
+   margin-bottom: 10px;
  }
 
  .service-details-content .content-two .owl-dots {
@@ -12738,7 +12739,7 @@
  .service-sidebar .category-widget .category-list li a {
    position: relative;
    display: block;
-   font-size: 20px;
+   font-size: 16px;
    line-height: 28px;
    font-weight: 600;
    color: var(--title-color);
@@ -12916,7 +12917,7 @@
 
  .industries-details {
    position: relative;
-   padding: 112px 0px 90px 0px;
+   padding: 90px 0px 90px 0px;
  }
 
 
@@ -14339,4 +14340,8 @@
 
  .menu-area .mobile-nav-toggler {
    background-color: var(--theme-color);
+ }
+
+ .text-justify {
+   text-align: justify;
  }
