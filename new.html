@@ -33,6 +33,166 @@
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet">
 
+    <style>
+        /* Key Capabilities Section - Modern Card Design */
+        .key-capabilities-section {
+            /* background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); */
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .key-capabilities-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(47, 164, 215, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        
+        .key-capabilities-section::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -10%;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(47, 164, 215, 0.08) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        
+        .capability-card {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 35px 28px;
+            height: 100%;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid rgba(47, 164, 215, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .capability-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #2fa4d7, #1a8cc4);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s ease;
+        }
+        
+        .capability-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 40px rgba(47, 164, 215, 0.2);
+            border-color: rgba(47, 164, 215, 0.3);
+        }
+        
+        .capability-card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .capability-card .icon-box {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 24px;
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.4s ease;
+        }
+        
+        .capability-card:hover .icon-box {
+            background: linear-gradient(135deg, #2fa4d7 0%, #1a8cc4 100%);
+            transform: scale(1.1) rotate(5deg);
+        }
+        
+        .capability-card .icon-box i {
+            font-size: 36px;
+            color: #2fa4d7;
+            transition: all 0.4s ease;
+        }
+        
+        .capability-card:hover .icon-box i {
+            color: #ffffff;
+        }
+        
+        .capability-card h4 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: color 0.3s ease;
+        }
+        
+        .capability-card:hover h4 {
+            color: #2fa4d7;
+        }
+        
+        .capability-card p {
+            font-size: 14px;
+            color: #666666;
+            line-height: 1.7;
+            margin: 0;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 991px) {
+            .capability-card {
+                padding: 28px 20px;
+            }
+            
+            .capability-card .icon-box {
+                width: 70px;
+                height: 70px;
+            }
+            
+            .capability-card .icon-box i {
+                font-size: 30px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .capability-card {
+                padding: 24px 18px;
+            }
+            
+            .capability-card h4 {
+                font-size: 16px;
+            }
+        }
+        
+        /* Image size uniformity */
+        .features-section .right-content img,
+        .chooseus-section .image-box img,
+        .project-block-three .image-box img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            object-position: center;
+        }
+        
+        .project-block-three .inner-box {
+            margin-bottom: 0;
+        }
+        
+        .chooseus-section .image-box {
+            position: relative;
+            overflow: hidden;
+        }
+    </style>
+
 </head>
 
 <!-- page wrapper -->
@@ -94,13 +254,13 @@
                         </li>
                         <li class="mb-2">
                             <img src="assets/images/icons/icon-27.png" alt="">
-                            <a href="oil-and-gas-epc.html" class=" fs-6  text-decoration-none">
+                            <a href="oil-and-gas-epc.html" class="active fs-6  text-decoration-none">
                                 Our Services
                             </a>
                         </li>
                         <li class="mb-2">
                             <img src="assets/images/icons/icon-27.png" alt="">
-                            <a href="projects-mcs-infrastructure.html" class="active fs-6  text-decoration-none">
+                            <a href="projects-mcs-infrastructure.html" class=" fs-6  text-decoration-none">
                                 Our Projects
                             </a>
                         </li>
@@ -161,9 +321,11 @@
                                         <ul class="navigation clearfix">
                                             <li><a href="index.html">Home</a></li>
                                             <li><a href="about-mcs-infrastructure.html">About Us</a></li>
-                                            <li class="dropdown"><a href="oil-and-gas-epc.html">Our Services</a>
+                                            <li class="dropdown"><a href="oil-and-gas-epc.html" class="active">Our
+                                                    Services</a>
                                                 <ul>
-                                                    <li><a href="oil-and-gas-epc.html">Oil & Gas EPC</a></li>
+                                                    <li><a href="oil-and-gas-epc.html" class="active">Oil & Gas EPC</a>
+                                                    </li>
                                                     <li><a href="water-infrastructure.html">Water Infrastructure</a>
                                                     </li>
                                                     <li><a href="civil-construction.html">Civil Construction</a></li>
@@ -171,8 +333,7 @@
                                                             Instrumentation</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="projects-mcs-infrastructure.html" class="active">Our
-                                                    Projects</a></li>
+                                            <li><a href="projects-mcs-infrastructure.html">Our Projects</a></li>
                                             <li><a href="gallery.html">Gallery</a></li>
                                             <li><a href="join-us.html">Career</a></li>
                                             <li><a href="contact-mcs-infrastructure.html">Contact Us</a></li>
@@ -246,192 +407,203 @@
         </div>
         <!-- End Mobile Menu -->
 
-        <!-- page-title -->
-        <section class="page-title">
-            <div class="bg-layer" style="background-image: url(assets/images/background/page-title.jpg);"></div>
-            <div class="based-content">
-                <div class="inner">
-                    <div class="logo-box">
-                        <figure class="logo"><a href="index.html"><img src="assets/images/mcs-logo.png" alt=""></a>
-                        </figure>
-                    </div>
-                    <div class="single-item">
-                        <h2 class="text-nowrap text-uppercase">Our Projects</h2>
-                        <div class="logo-box">
-                            <h5>Based On <br>United States.</h5>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <!-- page-title end -->
-
-        <!-- contact-section -->
-        <section class="contact-section">
+        <!-- features-section -->
+        <section class="features-section">
+            <div class="bg-layer" style="background-image: url(assets/images/background/feature-bg.jpg);"></div>
+            <div class="bg-layer" style="background: rgb(255 255 255 / 62%);"></div>
             <div class="auto-container">
-                <div class="row align-items-center">
-                    <div class="col-lg-5 col-md-12 col-sm-12 title-column">
-                        <div class="sec-title light">
-                            <h6>Get in Touch</h6>
-                            <h2 style="color: #515151;">Need Assistance? <span>[Contact]</span> Us</h2>
-                            <p class="mt_12">We're here to assist you with any inquiries.</p>
-                        </div>
+                <div class="title-box mb_50">
+                    <div class="sec-title">
+                        <h6>Services</h6>
+                        <h2 class="text-uppercase">Oil & Gas <span style="color: #2fa4d7;">EPC
+                                Services</span></h2>
+                        <p class="mt_12">Discover our premium quality metal products.</p>
                     </div>
-                    <div class="col-lg-7 col-md-12 col-sm-12 content-column">
-                        <div class="content-box">
-                            <p class="text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem
-                                consequatur modi
-                                veritatis, dolore consectetur similique fugit tempore voluptas sit nihil?Lorem ipsum
-                                dolor sit amet, consectetur adipisicing elit. Nihil, iste.</p>
+                </div>
+                <div class="inner-container">
+                    <div class="row clearfix">
+                        <div class="col-lg-6 col-md-12 col-sm-12 left-column">
+                            <div class="left-content">
+                                <div class="title-box">
+                                    <div class="title-shape"></div>
+                                    <h3 class="text-uppercase">Oil & Gas Industry <span style="color: #2fa4d7;">EPC
+                                            Services</span></h3>
+                                </div>
+                                <p class="text-justify">MCS Infrastructure Pvt. Ltd. provides specialized Engineering,
+                                    Procurement, and Construction (EPC) solutions for the Oil & Gas industry. We support
+                                    the development of critical energy infrastructure by delivering reliable
+                                    construction, engineering, and project management services.
+                                    Our team works on complex industrial projects including pipelines, processing
+                                    facilities, terminals, and supporting infrastructure, ensuring projects are
+                                    completed with high standards of safety, quality, and efficiency.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 right-column">
+                            <div class="left-content">
+                                <figure>
+                                    <img src="assets/images/oil-section/oil&gas-5.jpeg" class="img-fluid" alt="">
+                                </figure>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- contact-section end -->
+        <!-- features-section end -->
 
-        <!-- project-style-three -->
-        <section class="project-style-three">
+        <!-- key-capabilities-section -->
+        <section class="key-capabilities-section sec-pad">
             <div class="auto-container">
-                <div class="sortable-masonry">
-                    <div class="filters centred">
-                        <ul class="filter-tabs filter-btns mb_55">
-                            <li class="active filter" data-role="button" data-filter=".all"><i
-                                    class="flaticon-nut"></i><span>All [15]</span></li>
-                            <li class="filter" data-role="button" data-filter=".cat-1"><span>Oil & Gas EPC</span></li>
-                            <li class="filter" data-role="button" data-filter=".cat-2"><span>Water Infrastructure</span>
-                            </li>
-                            <li class="filter" data-role="button" data-filter=".cat-3"><span>Civil Construction</span>
-                            </li>
-                            <li class="filter" data-role="button" data-filter=".cat-4">Electrical & Instrumentation</li>
-                        </ul>
-                    </div>
-                    <div class="items-container row clearfix">
-                        <div class="col-lg-4 col-md-6 col-sm-12 masonry-item small-column all cat-3 cat-1 cat-2">
-                            <div class="project-block-two">
-                                <div class="inner-box">
-                                    <div class="bg-layer"
-                                        style="background-image: url(assets/images/project/project-3.jpg);"></div>
-                                    <div class="upper-box">
-                                        <h3><a href="project-details.html">Titanium Arch
-                                                Crossing</a></h3>
-                                    </div>
-                                    <div class="lower-box">
-                                        <h6><i class="flaticon-nut"></i><span>Infrastructure</span></h6>
-                                        <div class="link"><a href="project-details.html"><i
-                                                    class="flaticon-right-arrow"></i></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 masonry-item small-column all cat-1 cat-3 cat-4">
-                            <div class="project-block-two">
-                                <div class="inner-box">
-                                    <div class="bg-layer"
-                                        style="background-image: url(assets/images/project/project-4.jpg);"></div>
-                                    <div class="upper-box">
-                                        <h3><a href="project-details.html">Hornsdale Power
-                                                Reserve</a></h3>
-                                    </div>
-                                    <div class="lower-box">
-                                        <h6><i class="flaticon-nut"></i><span>Energy</span></h6>
-                                        <div class="link"><a href="project-details.html"><i
-                                                    class="flaticon-right-arrow"></i></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 masonry-item small-column all cat-3 cat-2 cat-5">
-                            <div class="project-block-two">
-                                <div class="inner-box">
-                                    <div class="bg-layer"
-                                        style="background-image: url(assets/images/project/project-5.jpg);"></div>
-                                    <div class="upper-box">
-                                        <h3><a href="project-details.html">Ironspire Skyscraper
-                                                Framework</a></h3>
-                                    </div>
-                                    <div class="lower-box">
-                                        <h6><i class="flaticon-nut"></i><span>Manufacturing</span></h6>
-                                        <div class="link"><a href="project-details.html"><i
-                                                    class="flaticon-right-arrow"></i></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 masonry-item small-column all cat-1 cat-2 cat-4">
-                            <div class="project-block-two">
-                                <div class="inner-box">
-                                    <div class="bg-layer"
-                                        style="background-image: url(assets/images/project/project-6.jpg);"></div>
-                                    <div class="upper-box">
-                                        <h3><a href="project-details.html">Ironspire Skyscraper
-                                                Framework</a></h3>
-                                    </div>
-                                    <div class="lower-box">
-                                        <h6><i class="flaticon-nut"></i><span>Manufacturing</span></h6>
-                                        <div class="link"><a href="project-details.html"><i
-                                                    class="flaticon-right-arrow"></i></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 masonry-item small-column all cat-3 cat-2 cat-5">
-                            <div class="project-block-two">
-                                <div class="inner-box">
-                                    <div class="bg-layer"
-                                        style="background-image: url(assets/images/project/project-7.jpg);"></div>
-                                    <div class="upper-box">
-                                        <h3><a href="project-details.html">Titanium Arch
-                                                Crossing</a></h3>
-                                    </div>
-                                    <div class="lower-box">
-                                        <h6><i class="flaticon-nut"></i><span>Infrastructure</span></h6>
-                                        <div class="link"><a href="project-details.html"><i
-                                                    class="flaticon-right-arrow"></i></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 masonry-item small-column all cat-1 cat-4 cat-5">
-                            <div class="project-block-two">
-                                <div class="inner-box">
-                                    <div class="bg-layer"
-                                        style="background-image: url(assets/images/project/project-8.jpg);"></div>
-                                    <div class="upper-box">
-                                        <h3><a href="project-details.html">Hornsdale Power
-                                                Reserve</a></h3>
-                                    </div>
-                                    <div class="lower-box">
-                                        <h6><i class="flaticon-nut"></i><span>Energy</span></h6>
-                                        <div class="link"><a href="project-details.html"><i
-                                                    class="flaticon-right-arrow"></i></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="title-box mb_50">
+                    <div class="sec-title">
+                        <h6>Capabilities</h6>
+                        <h2 class="text-uppercase">Key <span style="color: #2fa4d7;">Capabilities</span></h2>
+                        <p class="mt_12">Excellence in delivering complex oil and gas infrastructure projects.</p>
                     </div>
                 </div>
-                <div class="pagination-wrapper centred pt_20">
-                    <ul class="pagination">
-                        <li><a href="projects-mcs-infrastructure.html"><i
-                                    class="flaticon-right"></i><span>Prev</span></a></li>
-                        <li><a href="projects-mcs-infrastructure.html" class="current">01</a></li>
-                        <li>
-                            <div class="bar"></div>
-                        </li>
-                        <li><a href="projects-mcs-infrastructure.html">02</a></li>
-                        <li>
-                            <div class="bar"></div>
-                        </li>
-                        <li><a href="projects-mcs-infrastructure.html">03</a></li>
-                        <li><a href="projects-mcs-infrastructure.html"><span>Next</span><i
-                                    class="flaticon-right"></i></a></li>
-                    </ul>
+                <div class="inner-container">
+                    <div class="row clearfix">
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                            <div class="capability-card">
+                                <div class="icon-box">
+                                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#2fa4d7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18M3 12l4-8v16l4-8"/><path d="M21 12l-4 8v-16l-4 8"/></svg>
+                                </div>
+                                <h4>Pipeline Infrastructure</h4>
+                                <p>Cross-country and facility pipeline network development.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                            <div class="capability-card">
+                                <div class="icon-box">
+                                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#2fa4d7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"/><path d="M5 20V8l4-5v17"/><path d="M13 20V4l6 3v13"/><circle cx="8" cy="19" r="2"/><circle cx="16" cy="19" r="2"/></svg>
+                                </div>
+                                <h4>Gas Processing Facilities</h4>
+                                <p>Construction of gas treatment and processing plants.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                            <div class="capability-card">
+                                <div class="icon-box">
+                                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#2fa4d7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/></svg>
+                                </div>
+                                <h4>Terminal & Storage</h4>
+                                <p>Development of storage terminals and tank farms.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                            <div class="capability-card">
+                                <div class="icon-box">
+                                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#2fa4d7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"/><path d="M5 20V8l4-5v17"/><path d="M13 20V4l6 3v13"/><path d="M9 20v-4h6v4"/></svg>
+                                </div>
+                                <h4>Refinery Infrastructure</h4>
+                                <p>Infrastructure support for refinery operations.</p>
+                            </div>
+                        </div>
+                      
+                    </div>
                 </div>
             </div>
         </section>
-        <!-- project-style-three end -->
+        <!-- key-capabilities-section end -->
+
+        <!-- chooseus-section -->
+        <section class="chooseus-section">
+            <div class="auto-container">
+                <div class="sec-title centred mb_45">
+                    <h6>Why Choose Us</h6>
+                    <h2 class="text-uppercase">Oil & Gas <span>Project</span> Showcase</h2>
+                    <p class="mt_12">Delivering quality, innovation, and precision.</p>
+                </div>
+                <div class="three-item-carousel owl-carousel owl-theme owl-dots-none nav-style-one">
+                    <div class="project-block-three">
+                        <div class="inner-box">
+                            <figure class="image-box"><img src="assets/images/oil-section/oil&gas-1.jpeg" alt="">
+                            </figure>
+                            <div class="text-box">
+                                <h3><a href="#">Hornsdale Power Reserve</a></h3>
+                            </div>
+                            <div class="view-btn "><a href="assets/images/oil-section/oil&gas-1.jpeg"
+                                    class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-block-three">
+                        <div class="inner-box">
+                            <figure class="image-box"><img src="assets/images/oil-section/oil&gas-2.jpeg" alt="">
+                            </figure>
+                            <div class="text-box">
+                                <h3><a href="#">Titanium Arch Crossing</a></h3>
+                            </div>
+                            <div class="view-btn"><a href="assets/images/oil-section/oil&gas-2.jpeg"
+                                    class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-block-three">
+                        <div class="inner-box">
+                            <figure class="image-box"><img src="assets/images/oil-section/oil&gas-3.jpeg" alt="">
+                            </figure>
+                            <div class="text-box">
+                                <h3><a href="#">Hornsdale Power Reserve</a></h3>
+                            </div>
+                            <div class="view-btn"><a href="assets/images/oil-section/oil&gas-3.jpeg"
+                                    class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-block-three">
+                        <div class="inner-box">
+                            <figure class="image-box"><img src="assets/images/oil-section/oil&gas-4.jpeg" alt="">
+                            </figure>
+                            <div class="text-box">
+                                <h3><a href="#">Ironspire Skyscraper Framework</a></h3>
+                            </div>
+                            <div class="view-btn"><a href="assets/images/oil-section/oil&gas-4.jpeg"
+                                    class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-block-three">
+                        <div class="inner-box">
+                            <figure class="image-box"><img src="assets/images/oil-section/oil&gas-5.jpeg" alt="">
+                            </figure>
+                            <div class="text-box">
+                                <h3><a href="#">Ironspire Skyscraper Framework</a></h3>
+                            </div>
+                            <div class="view-btn"><a href="assets/images/oil-section/oil&gas-5.jpeg"
+                                    class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-block-three">
+                        <div class="inner-box">
+                            <figure class="image-box"><img src="assets/images/oil-section/oil&gas-6.jpeg" alt="">
+                            </figure>
+                            <div class="text-box">
+                                <h3><a href="#">Ironspire Skyscraper Framework</a></h3>
+                            </div>
+                            <div class="view-btn"><a href="assets/images/oil-section/oil&gas-6.jpeg"
+                                    class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-block-three">
+                        <div class="inner-box">
+                            <figure class="image-box"><img src="assets/images/oil-section/oil&gas-7.jpeg" alt="">
+                            </figure>
+                            <div class="text-box">
+                                <h3><a href="#">Ironspire Skyscraper Framework</a></h3>
+                            </div>
+                            <div class="view-btn"><a href="assets/images/oil-section/oil&gas-7.jpeg"
+                                    class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- chooseus-section end -->
 
         <!-- footer-style-two -->
         <footer class="footer-style-two">
@@ -463,7 +635,8 @@
                             <div class="col-lg-7 footer-column">
                                 <div class="footer-widget links-widget">
                                     <div class="social-box mb_50">
-                                        <p style="color: #6eaacf;letter-spacing: 0.1px;font-size: 20px;">A trusted name in engineering,
+                                        <p style="color: #6eaacf;letter-spacing: 0.1px;font-size: 20px;">A trusted name
+                                            in engineering,
                                             procurement, and construction, shaping tomorrow’s infrastructure with
                                             sustainable solutions.</p>
                                     </div>
@@ -533,7 +706,6 @@
         </div>
 
     </div>
-
 
     <!-- jequery plugins -->
     <script src="assets/js/jquery.js"></script>
