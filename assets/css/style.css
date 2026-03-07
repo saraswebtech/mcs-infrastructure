@@ -653,8 +653,8 @@ img {
 
 .sec-title h2{
   display: block;
-  font-size: 50px;
-  line-height: 58px;
+  font-size: 35px;
+  line-height: 40px;
 }
 
 .sec-title h2 span{
@@ -3058,13 +3058,13 @@ div#mCSB_1_container{
 }
 
 .service-section .upper-box .count-box h2{
-  font-size: 140px;
-  line-height: 100px;
+  font-size: 35px;
+  line-height: 40px;
   font-weight: 400;
 }
 
 .service-section .upper-box .count-box h2 span{
-  font-size: 72px;
+  font-size: 35px;
 }
 
 .service-section .upper-box .count-box h5{
@@ -3099,7 +3099,7 @@ div#mCSB_1_container{
 
 .service-section .upper-box{
   position: relative;
-  padding: 106px 0px 55px 50px;
+  padding: 35px 0px 55px 50px;
 }
 
 .service-section .lower-box{
@@ -3228,12 +3228,12 @@ div#mCSB_1_container{
   position: absolute;
   right: 0px;
   bottom: 0px;
-  width: 70px;
-  height: 70px;
-  line-height: 80px;
+  width: 40px;
+  height: 40px;
+  line-height: 35px;
   background-color: #fff;
   text-align: center;
-  font-size: 50px;
+  font-size: 35px;
   color: var(--theme-color);
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
   transition: all .3s cubic-bezier(.25,.8,.25,1);
@@ -5105,7 +5105,7 @@ div#mCSB_1_container{
 
 .main-footer .widget-section{
   position: relative;
-  padding: 60px 0px 60px 0px;
+  padding: 50px 0px 40px 0px;
   border-bottom: 1px solid #2c4458;
 }
 
@@ -5325,8 +5325,8 @@ div#mCSB_1_container{
 
 .footer-bottom .bottom-inner .left-column{
   position: relative;
-  /* padding-top: 59px; */
-  /* padding-bottom: 47px; */
+  /* padding-top: 10px; */
+  padding-bottom: 10x;
 }
 
 .footer-bottom .bottom-inner .middle-column{
@@ -5433,7 +5433,7 @@ div#mCSB_1_container{
 }
 
 .footer-bottom .bottom-inner .right-column{
-  padding: 16px 0px;
+  padding: 15px 0px;
 }
 
 

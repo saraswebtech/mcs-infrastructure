@@ -43,6 +43,37 @@
             background-position: center center !important;
             background-repeat: no-repeat !important;
         }
+
+        /* Intro section - Single icon, no hover effect, larger size */
+        .intro-block-one .inner-box .content-box .icon-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .intro-block-one .inner-box .content-box .icon-box .icon,
+        .intro-block-one .inner-box .content-box .icon-box .overlay-icon {
+            opacity: 1 !important;
+            position: relative;
+            font-size: 50px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: var(--theme-color);
+        }
+
+        .intro-block-one .inner-box .content-box .icon-box .overlay-icon {
+            display: none;
+        }
+
+        .intro-block-one:hover .inner-box .content-box .icon-box .icon {
+            opacity: 1 !important;
+        }
     </style>
 
 </head>
@@ -308,27 +339,17 @@
                             <div class="inner-box">
                                 <div class="content-box">
                                     <div class="icon-box">
-                                        <div class="icon"><img src="assets/images/icons/icon-2.png" alt=""></div>
-                                        <div class="overlay-icon"><img src="assets/images/icons/icon-1.png" alt="">
-                                        </div>
+                                        <div class="icon"><i class="fa fa-chart-line"></i></div>
                                     </div>
                                     <div class="text-box">
                                         <h6>Our</h6>
-                                        <h3>Identity</h3>
-                                        <p>Rooted <br />in Excellence.</p>
+                                        <h3>Strengths</h3>
+                                        <p>Excellence in <br />Every Project.</p>
                                     </div>
                                 </div>
                                 <div class="image-box">
-                                    <span class="rotate-text">&nbsp;About&nbsp;us&nbsp;</span>
-                                    <div class="bar-box">
-                                        <div class="bar bar-1"></div>
-                                        <div class="bar bar-2"></div>
-                                        <div class="bar bar-3"></div>
-                                    </div>
-                                    <figure class="image"><img src="assets/images/resource/intro-1.png" alt=""></figure>
-                                    <div class="link-box">
-                                        <a href="index.html"><i class="flaticon-right-arrow"></i></a>
-                                    </div>
+                                    <figure class="image"><img src="assets/images/core/home_strength.jpg"
+                                            alt="Our Strengths"></figure>
                                 </div>
                             </div>
                         </div>
@@ -338,27 +359,17 @@
                             <div class="inner-box">
                                 <div class="content-box">
                                     <div class="icon-box">
-                                        <div class="icon"><img src="assets/images/icons/icon-4.png" alt=""></div>
-                                        <div class="overlay-icon"><img src="assets/images/icons/icon-3.png" alt="">
-                                        </div>
+                                        <div class="icon"><i class="fa fa-bullseye"></i></div>
                                     </div>
                                     <div class="text-box">
                                         <h6>Our</h6>
-                                        <h3>Stability</h3>
-                                        <p>Solutions That Deliver.</p>
+                                        <h3>Mission</h3>
+                                        <p>Building Better <br />Futures.</p>
                                     </div>
                                 </div>
                                 <div class="image-box">
-                                    <span class="rotate-text">&nbsp;Business&nbsp;</span>
-                                    <div class="bar-box">
-                                        <div class="bar bar-1"></div>
-                                        <div class="bar bar-2"></div>
-                                        <div class="bar bar-3"></div>
-                                    </div>
-                                    <figure class="image"><img src="assets/images/resource/intro-2.png" alt=""></figure>
-                                    <div class="link-box">
-                                        <a href="index.html"><i class="flaticon-right-arrow"></i></a>
-                                    </div>
+                                    <figure class="image"><img src="assets/images/core/home_mission.jpg"
+                                            alt="Our Mission"></figure>
                                 </div>
                             </div>
                         </div>
@@ -368,27 +379,17 @@
                             <div class="inner-box">
                                 <div class="content-box">
                                     <div class="icon-box">
-                                        <div class="icon"><img src="assets/images/icons/icon-5.png" alt=""></div>
-                                        <div class="overlay-icon"><img src="assets/images/icons/icon-6.png" alt="">
-                                        </div>
+                                        <div class="icon"><i class="fa fa-gem"></i></div>
                                     </div>
                                     <div class="text-box">
                                         <h6>Our</h6>
-                                        <h3>Technology</h3>
-                                        <p>Innovating for Tomorrow.</p>
+                                        <h3>Values</h3>
+                                        <p>Integrity & <br />Commitment.</p>
                                     </div>
                                 </div>
                                 <div class="image-box">
-                                    <span class="rotate-text">Innovation</span>
-                                    <div class="bar-box">
-                                        <div class="bar bar-1"></div>
-                                        <div class="bar bar-2"></div>
-                                        <div class="bar bar-3"></div>
-                                    </div>
-                                    <figure class="image"><img src="assets/images/resource/intro-3.png" alt=""></figure>
-                                    <div class="link-box">
-                                        <a href="index.html"><i class="flaticon-right-arrow"></i></a>
-                                    </div>
+                                    <figure class="image"><img src="assets/images/core/home_value.jpg" alt="Our Values">
+                                    </figure>
                                 </div>
                             </div>
                         </div>
@@ -407,11 +408,11 @@
                         <div class="content-box">
                             <div class="sec-title mb_45">
                                 <h6>About Us</h6>
-                                <h2>Leaders in Precision <span>[Manufacturing]</span> and Design</h2>
+                                <h2>Building Reliable <span>Infrastructure</span> for a Stronger Future</h2>
                             </div>
                             <div class="inner-box">
                                 <div class="single-team">
-                                    <h3>Team of Innovators</h3>
+                                    <h3>Experienced Engineering Team</h3>
                                     <div class="link align-3"><a href="index.html"><i
                                                 class="flaticon-right-arrow"></i></a></div>
                                     <span class="rotate-text">Core Team</span>
@@ -419,11 +420,14 @@
                                     </figure>
                                 </div>
                                 <div class="text-box">
-                                    <h3>Story of Quality and Commitment</h3>
-                                    <p>Leading the industry with innovative solutions,
-                                        precision craftsmanship, and a commitment to
-                                        delivering high-quality manufacturing services
-                                        worldwide.</p>
+                                    <h3>Building Reliable Infrastructure with Excellence</h3>
+
+                                    <p>
+                                        <strong>MCS Infrastructure</strong> delivers high-quality <strong>infrastructure
+                                            and engineering solutions</strong> with a focus on <strong>precision,
+                                            safety, and innovation</strong>. Our experienced team ensures every project
+                                        is completed with <strong>efficiency and long-term value</strong>.
+                                    </p>
                                     <a href="index.html"><i class="flaticon-right-arrow"></i><span>Read More</span></a>
                                 </div>
                             </div>
@@ -436,22 +440,17 @@
                                     <li><i class="flaticon-iso"></i></li>
                                     <li><i class="flaticon-trophy"></i></li>
                                 </ul>
-                                <h5>Certified & Award-Winner.</h5>
+                                <h5>Certified Infrastructure Company</h5>
                             </div>
                             <div class="image-box">
                                 <figure class="image clearfix"><img src="assets/images/resource/about-1.jpg" alt="">
                                 </figure>
                                 <div class="image-content">
                                     <div class="text-box">
-                                        <h2>10<span>k</span></h2>
-                                        <h5>Tons Produced Annually.</h5>
+                                        <h2>100<span>%</span></h2>
+                                        <h5>Client Satisfaction</h5>
                                     </div>
-                                    <div class="video-box">
-                                        <h5>Our&nbsp;Video</h5>
-                                        <a href="https://www.youtube.com/watch?v=nfP5N9Yc72A&amp;t=28s"
-                                            class="lightbox-image" data-caption=""><i
-                                                class="flaticon-play-button"></i></a>
-                                    </div>
+                                    <h5>Our&nbsp;<br>Projects</h5>
                                 </div>
                             </div>
                         </div>
@@ -472,15 +471,16 @@
                                 <div class="count-box align-3">
                                     <div class="shape" style="background-image: url(assets/images/shape/shape-5.png);">
                                     </div>
-                                    <h2>50<span>k</span></h2>
-                                    <h5>Units Produced Annually <br />with Precision.</h5>
+                                    <h2>25<span>+</span></h2>
+                                    <h5>Years of Excellence <br />in Infrastructure.</h5>
                                 </div>
                             </div>
                             <div class="col-lg-8 col-md-12 col-sm-12 title-column">
                                 <div class="sec-title">
-                                    <h6>Services</h6>
-                                    <h2>Excellence in <br />Every <span>[Service]</span> Offered</h2>
-                                    <p class="mt_12">Delivering quality, innovation, and precision.</p>
+                                    <h6>Our Expertise</h6>
+                                    <h2>Delivering Excellence <br />Across <span>Infrastructure</span> Sectors</h2>
+                                    <p class="mt_12">Comprehensive solutions tailored to meet the evolving demands of
+                                        modern infrastructure development.</p>
                                 </div>
                             </div>
                         </div>
@@ -490,10 +490,9 @@
                             <div class="inner-box">
                                 <figure class="image"><img src="assets/images/resource/service-1.png" alt=""></figure>
                                 <div class="lower-content">
-                                    <h3>Discover Our Complete
-                                        Service Range.</h3>
-                                    <p>Services tailored to your needs.</p>
-                                    <a href="service.html"><i class="flaticon-right-arrow"></i><span>All
+                                    <h3>Comprehensive Solutions <br />for Every Project Need.</h3>
+                                    <p>End-to-end infrastructure services delivered with precision and expertise.</p>
+                                    <a href="civil-construction.html"><i class="flaticon-right-arrow"></i><span>Explore
                                             Services</span></a>
                                 </div>
                             </div>
@@ -504,21 +503,21 @@
                                     <div class="image-inner">
                                         <span class="count-text">01</span>
                                         <div class="image-box">
-                                            <div class="shape"
-                                                style="background-image: url(assets/images/shape/shape-6.png);"></div>
-                                            <figure class="image"><img src="assets/images/service/service-1.jpg" alt="">
+                                            <figure><img src="assets/images/service/service-1.jpg" alt="">
                                             </figure>
-                                            <div class="icon-box"><i class="flaticon-turning"></i></div>
+                                            <div class="icon-box"><i class="flaticon-oil"></i></div>
                                         </div>
                                     </div>
                                     <div class="lower-content">
                                         <div class="block-title">
                                             <div class="line-shape"></div>
-                                            <h3><a href="service-details.html">Fabrication</a></h3>
+                                            <h3><a href="oil-and-gas-epc.html">Oil & Gas EPC</a></h3>
                                         </div>
-                                        <p>Precision crafting metal structures with innovative techniques & expertise.
+                                        <p>
+                                            End-to-end engineering, procurement, and construction solutions for the oil
+                                            and gas industry.
                                         </p>
-                                        <div class="btn-box"><a href="service-details.html"><i
+                                        <div class="btn-box"><a href="oil-and-gas-epc.html"><i
                                                     class="flaticon-right-arrow"></i><span>Read More</span></a></div>
                                     </div>
                                 </div>
@@ -528,20 +527,20 @@
                                     <div class="image-inner">
                                         <span class="count-text">02</span>
                                         <div class="image-box">
-                                            <div class="shape"
-                                                style="background-image: url(assets/images/shape/shape-6.png);"></div>
-                                            <figure class="image"><img src="assets/images/service/service-1.jpg" alt="">
+                                            <figure><img src="assets/images/service/service-2.jpg" alt="">
                                             </figure>
-                                            <div class="icon-box"><i class="flaticon-bending"></i></div>
+                                            <div class="icon-box"><i class="flaticon-water"></i></div>
                                         </div>
                                     </div>
                                     <div class="lower-content">
                                         <div class="block-title">
                                             <div class="line-shape"></div>
-                                            <h3><a href="service-details-2.html">Metal Processing</a></h3>
+                                            <h3><a href="water-infrastructure.html">Water Infrastructure</a></h3>
                                         </div>
-                                        <p>Transforming raw materials into high quality metal products.</p>
-                                        <div class="btn-box"><a href="service-details-2.html"><i
+                                        <p>Sustainable water supply systems, treatment facilities, and drainage
+                                            solutions.
+                                        </p>
+                                        <div class="btn-box"><a href="water-infrastructure.html"><i
                                                     class="flaticon-right-arrow"></i><span>Read More</span></a></div>
                                     </div>
                                 </div>
@@ -551,20 +550,43 @@
                                     <div class="image-inner">
                                         <span class="count-text">03</span>
                                         <div class="image-box">
-                                            <div class="shape"
-                                                style="background-image: url(assets/images/shape/shape-6.png);"></div>
-                                            <figure class="image"><img src="assets/images/service/service-1.jpg" alt="">
+                                            <figure><img src="assets/images/service/service-3.jpg" alt="">
                                             </figure>
-                                            <div class="icon-box"><i class="flaticon-beam"></i></div>
+                                            <div class="icon-box"><i class="flaticon-construction"></i></div>
                                         </div>
                                     </div>
                                     <div class="lower-content">
                                         <div class="block-title">
                                             <div class="line-shape"></div>
-                                            <h3><a href="service-details-3.html">Metal Casting</a></h3>
+                                            <h3><a href="civil-construction.html">Civil Construction</a></h3>
                                         </div>
-                                        <p>Metal casting turns molten metal into solid shapes and products.</p>
-                                        <div class="btn-box"><a href="service-details-3.html"><i
+                                        <p>Expertise in commercial, industrial, and residential construction projects.
+                                        </p>
+                                        <div class="btn-box"><a href="civil-construction.html"><i
+                                                    class="flaticon-right-arrow"></i><span>Read More</span></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service-block-one">
+                                <div class="inner-box">
+                                    <div class="image-inner">
+                                        <span class="count-text">04</span>
+                                        <div class="image-box">
+                                            <figure><img src="assets/images/service/service-4.jpg" alt="">
+                                            </figure>
+                                            <div class="icon-box"><i class="flaticon-electric"></i></div>
+                                        </div>
+                                    </div>
+                                    <div class="lower-content">
+                                        <div class="block-title">
+                                            <div class="line-shape"></div>
+                                            <h3><a href="electrical-instrumentationl.html">Electrical &
+                                                    Instrumentation</a></h3>
+                                        </div>
+                                        <p>Advanced electrical systems and instrumentation solutions for industrial
+                                            applications.
+                                        </p>
+                                        <div class="btn-box"><a href="electrical-instrumentationl.html"><i
                                                     class="flaticon-right-arrow"></i><span>Read More</span></a></div>
                                     </div>
                                 </div>
@@ -575,6 +597,7 @@
             </div>
         </section>
         <!-- service-section end -->
+
 
         <!-- chooseus-style-two -->
         <section class="chooseus-style-two">
@@ -926,12 +949,11 @@
                                     <h3>Contact</h3>
                                 </div>
                                 <div class="widget-content">
-                                    <p>Metal works, Business Park
-                                        Springfield, IL 62701
-                                        United States</p>
-                                    <div class="phone"><a href="tel:66120003456">[+66] 12 000 3456</a></div>
+                                    <p> Krishnapuri Colony, Pandeypur, Mirzapur, Uttar Pradesh – 231001</p>
+                                    <div class="phone"><a href="tel:+917718821777">+91 771 8821 777</a></div>
                                     <div class="email"><a
-                                            href="mailto:getsupport@example.com">getsupport@example.com</a></div>
+                                            href="mailto:info@mcsinfrastructure.com">info@mcsinfrastructure.com</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1002,16 +1024,13 @@
                     <div class="bottom-inner">
                         <div class="left-column">
 
-                            <p><a href="index.html">Terms & Conditions</a>&nbsp;&nbsp;.&nbsp;&nbsp;<a
-                                    href="index.html">Policies
-                                    Legal Notice.</a></p>
+                            <p>Copyright © 2025 <a href="#"> Mcs Infrastructure Pvt. Ltd.</a> All Rights Reserved.</p>
                         </div>
 
                         <div class="right-column align-3">
 
                             <div class="copyright">
-                                <p>Copyrights &copy; 2025 <a href="index.html">Metallic,</a> All Rights Reserved.
-                                </p>
+                                <p> Designed and Developed By <a href="#"> Saras Webtech</p>
                             </div>
                         </div>
                     </div>
