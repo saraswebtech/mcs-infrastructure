@@ -927,7 +927,7 @@
 
  .main-header {
    position: relative;
-   background-color: #fff;
+   /* background-color: #fff; */
  }
 
  .main-header .outer-container {
@@ -5471,7 +5471,7 @@
 
  .footer-bottom .bottom-inner .copyright p {
    color: #a5aaaf;
-   font-size:14px;
+   font-size: 14px;
  }
 
  .footer-bottom .bottom-inner .copyright p a {
@@ -5500,7 +5500,7 @@
 
  .header-top {
    position: relative;
-   background-color: #f7f7f7;
+   background-color: #f7f7f726;
    padding: 17px 355px 55px 335px;
  }
 
@@ -5611,8 +5611,8 @@
  .header-style-two .support-box .icon-box {
    position: relative;
    display: inline-block;
-   font-size: 35px;
-   color: var(--theme-color);
+   font-size: 26px;
+   color: #00153b;
  }
 
  .header-style-two .support-box .icon-box::before {
@@ -5633,7 +5633,7 @@
 
  .header-style-two .support-box h5 a {
    display: inline-block;
-   color: #fff;
+   color: #00153b;
  }
 
  .header-style-two .support-box h5 a:hover {
@@ -14392,8 +14392,8 @@
  }
 
  .banner-style-two .slide-item {
-   height: 80vh;
-   min-height: 80vh;
+   height: 100vh;
+   min-height: 100vh;
  }
 
  .banner-style-two .bg-layer {
