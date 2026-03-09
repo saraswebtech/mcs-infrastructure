@@ -997,8 +997,8 @@
    gap: 10px;
  }
 
- .active {
-   color: #a10000;
+ .main-menu .navigation li.active a {
+   color: #2cba9c;
  }
 
  .main-header .menu-right-content li.contact-link a i {
