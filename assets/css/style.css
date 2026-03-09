@@ -1120,7 +1120,7 @@
    position: relative;
    display: block;
    text-align: center;
-   font-size: 18px;
+   font-size: 15px;
    line-height: 27px;
    padding-top: 15px;
    padding-bottom: 15px;
@@ -5500,7 +5500,7 @@
 
  .header-top {
    position: relative;
-   background-color: var(--secondary-color);
+   background-color: #f7f7f7;
    padding: 17px 355px 55px 335px;
  }
 
