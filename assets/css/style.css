@@ -5157,7 +5157,7 @@
 
  .main-footer .widget-section {
    position: relative;
-   padding: 50px 0px 40px 0px;
+   padding: 60px 0px 50px 0px;
    border-bottom: 1px solid #2c4458;
  }
 
@@ -5176,7 +5176,7 @@
  .main-footer .contact-widget p {
    color: #a5aaaf;
    margin-bottom: 15px;
-   max-width: 210px;
+   /* max-width: 210px; */
  }
 
  .main-footer .contact-widget .phone a {
@@ -5244,7 +5244,7 @@
    position: relative;
    display: inline-flex;
    align-items: center;
-   font-size: 17px;
+   font-size: 15px;
    line-height: 28px;
    font-family: var(--text-font);
    color: #a5aaaf;
