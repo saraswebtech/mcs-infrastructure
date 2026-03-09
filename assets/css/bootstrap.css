@@ -6715,9 +6715,9 @@ textarea.form-control-lg {
   }
 }
 .clearfix::after {
-  display: block;
+  /* display: block;
   clear: both;
-  content: "";
+  content: ""; */
 }
 
 .text-bg-primary {
