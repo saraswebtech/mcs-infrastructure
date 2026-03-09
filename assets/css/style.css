@@ -997,6 +997,10 @@
    gap: 10px;
  }
 
+ .active {
+   color: #a10000;
+ }
+
  .main-header .menu-right-content li.contact-link a i {
    position: relative;
    display: inline-block;
