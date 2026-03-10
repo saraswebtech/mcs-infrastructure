@@ -698,7 +698,7 @@
 
  .sec-title h2 {
    display: block;
-   font-size: 35px;
+   font-size: 30px;
    line-height: 40px;
  }
 
@@ -2901,13 +2901,14 @@
 
  .about-section .content-box .inner-box .text-box h3 {
    display: block;
-   font-size: 24px;
-   line-height: 32px;
+   font-size: 20px;
+   line-height: 22px;
    margin-bottom: 24px;
  }
 
  .about-section .content-box .inner-box .text-box p {
    margin-bottom: 30px;
+   line-height: 24px;
  }
 
  .about-section .content-box .inner-box .text-box a {
@@ -2957,11 +2958,11 @@
  .about-section .inner-content .award-box {
    position: absolute;
    left: -100px;
-   top: 118px;
+   top: 35px;
    width: 200px;
    background-color: var(--secondary-color);
    text-align: center;
-   padding: 30px 20px 22px 20px;
+   padding: 10px;
  }
 
  .about-section .inner-content .award-box .icon-list {
@@ -2975,15 +2976,15 @@
  .about-section .inner-content .award-box .icon-list li {
    position: relative;
    display: inline-block;
-   width: 50px;
-   height: 50px;
-   line-height: 58px;
+   width: 35px;
+   height: 35px;
+   line-height: 42px;
    background-color: #fff;
    text-align: center;
    border-radius: 50%;
-   font-size: 26px;
+   font-size: 20px;
    color: #332d4f;
-   margin: 0px -5px;
+   margin: 0px -2px;
  }
 
  .about-section .inner-content .award-box .icon-list li:last-child {
@@ -2996,8 +2997,8 @@
  }
 
  .about-section .inner-content .award-box h5 {
-   font-size: 18px;
-   line-height: 26px;
+   font-size: 15px;
+   line-height: 20px;
    color: #fff;
  }
 
@@ -3649,7 +3650,7 @@
  .industries-section .tabs-box .content-box p {
    color: #a5aaaf;
    margin-bottom: 25px;
-   font-size:15px;
+   font-size: 15px;
  }
 
  .industries-section .tabs-box .content-box .list-item li {
@@ -6332,7 +6333,7 @@
 
  .company-section .single-column .inner-box .static-content {
    position: relative;
-   padding: 36px 20px 32px 40px;
+   padding: 32px 32px 32px 32px;
    border-right: 1px solid #ebe9ef;
  }
 
@@ -6352,7 +6353,7 @@
 
  .company-section .single-column .inner-box h3 {
    display: block;
-   font-size: 24px;
+   font-size: 19px;
    line-height: 32px;
    margin-bottom: 18px;
  }
@@ -11630,7 +11631,7 @@
  .page-title .based-content .inner {
    position: relative;
    display: block;
-   background-color: var(--secondary-color);
+   background-color: #e5e5e5;
    padding: 50px 45px 46px 50px;
  }
 
