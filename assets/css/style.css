@@ -11638,13 +11638,13 @@
  .page-title .based-content .inner .logo-box {
    position: relative;
    display: block;
-   margin-bottom: 65px;
+   margin-bottom: 90px;
  }
 
  .page-title .based-content .inner .logo-box .logo {
    position: relative;
    display: block;
-   margin-bottom: 45px;
+   margin-bottom: 20px;
  }
 
  .page-title .based-content .inner .logo-box h5 {
@@ -11679,22 +11679,23 @@
  .page-title .based-content .inner .single-item {
    position: relative;
    display: block;
-   padding-left: 100px;
+   padding-left: 150px;
  }
 
  .page-title .based-content .inner .single-item .shape {
    position: absolute;
-   left: 0px;
+   left: -30px;
    bottom: 5px;
-   width: 90px;
-   height: 162px;
+   width: 180px;
+   height: 226px;
    background-repeat: no-repeat;
+   top:-80px;
  }
 
  .page-title .based-content .inner .single-item h2 {
    display: block;
-   font-size: 60px;
-   line-height: 70px;
+   font-size: 40px;
+   line-height: 25px;
    color: #fff;
    margin-bottom: 3px;
  }
