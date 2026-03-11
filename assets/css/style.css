@@ -1871,7 +1871,7 @@
  .sidebar-popup {
    position: fixed;
    left: -100%;
-   top: 91px;
+   top:68px;
    width: 425px;
    height: 100%;
    z-index: 99999;
@@ -1890,8 +1890,8 @@
  .sidebar-popup .popup-inner {
    position: relative;
    display: block;
-   padding: 50px;
-   padding-bottom: 120px;
+   padding: 40px 50px;
+line-height: 26px;
    height: 100%;
    overflow-y: scroll;
  }
