@@ -459,7 +459,7 @@
 
  .theme-btn.btn-two {
    background-color: #2cba9c;
-   color: var(--title-color);
+   /* color: var(--title-color); */
    margin-right:15px;
  }
 
