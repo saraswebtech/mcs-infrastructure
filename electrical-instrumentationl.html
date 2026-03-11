@@ -30,7 +30,36 @@
     <link href="assets/css/odometer.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet">
+    <style>
+        .industries-section .tab-btns .tab-btn {
+            position: relative;
+            display: block;
+            font-size: 18px;
+            line-height: 28px;
+            font-family: var(--title-font);
+            font-weight: 600;
+            color: var(--title-color);
+            padding: 33px 17px;
+            cursor: pointer;
+            border-bottom: 1px solid #e4e9ec;
+            border-left: 1px solid #e4e9ec;
+            transition: all 500ms ease;
+        }
 
+        .industries-section .tabs-box .content-box {
+            position: relative;
+            display: block;
+            background-color: var(--secondary-color);
+            margin-left: -30px;
+            padding: 25px 30px 25px 30px;
+        }
+
+        .industries-section .tabs-box .content-box p {
+            color: #a5aaaf;
+            margin-bottom: 5px;
+            font-size: 15px;
+        }
+    </style>
 </head>
 
 <body>
@@ -67,10 +96,8 @@
                     </a>
                 </figure>
                 <div class="form-inner">
-                    <p class="mb-3">
-                        <strong>Lorem ipsum</strong> dolor sit amet consectetur adipisicing elit.
-                        Mollitia quibusdam corporis rerum dolores, beatae corrupti.
-                        Culpa, accusantium aperiam. Molestiae, illo.
+                    <p class="mb-3 text-justify">
+                        <strong>MCS Infrastructure</strong> is a multidisciplinary engineering and construction company delivering integrated EPC solutions across critical sectors including Oil & Gas, Civil Construction, Water Infrastructure, and Electrical & Instrumentation.
                     </p>
                     <ul class=" main-menu sidebar-menu list-unstyled text-left">
                         <li class="mb-2">
@@ -546,7 +573,7 @@
                                     <div class="tab active-tab" id="tab-1">
                                         <div class="content-box">
                                             <h6>Power Distribution Systems</h6>
-                                            <p class="text-justify">
+                                            <p class="text-justify mb-0">
                                                 Installation and integration of electrical power systems that support
                                                 industrial facilities, infrastructure projects, and energy distribution
                                                 networks.
@@ -556,7 +583,7 @@
                                     <div class="tab" id="tab-2">
                                         <div class="content-box">
                                             <h6>Industrial Automation & Control</h6>
-                                            <p class="text-justify">
+                                            <p class="text-justify" style=" margin-bottom: 27px;">
                                                 Implementation of instrumentation and control systems that monitor and
                                                 automate industrial processes for improved operational efficiency.
                                             </p>
@@ -565,7 +592,7 @@
                                     <div class="tab" id="tab-3">
                                         <div class="content-box">
                                             <h6>Electrical Infrastructure Development</h6>
-                                            <p class="text-justify">
+                                            <p class="text-justify ">
                                                 Engineering and installation of switchgear systems, control panels, and
                                                 electrical networks required for industrial and infrastructure projects.
                                             </p>
