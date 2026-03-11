@@ -5509,7 +5509,7 @@
 
  .header-top {
    position: relative;
-   background-color: #ffffffbf;
+   background-color: #fff;
    padding: 15px 355px 45px 335px;
  }
 
@@ -6411,6 +6411,7 @@
    display: block;
    font-size: 17px;
    margin-bottom: 11px;
+   line-height: 20px;
    padding-left: 25px;
  }
 
@@ -8362,7 +8363,7 @@
  .header-top-two {
    position: relative;
    width: 100%;
-   background-color: #f3f5f9;
+   background-color: #fff;
    padding: 20px 0px;
  }
 
@@ -10933,7 +10934,7 @@
    display: block;
  }
 
- .about-style-three .content-box .inner-box .left-content .icon-box {
+ .about-style-three .content-box .inner-box .award-box .icon-box {
    position: relative;
    display: inline-block;
    width: 80px;
@@ -11041,7 +11042,7 @@
    top: 10px;
  }
 
- .about-style-three .content-box .award-box::before {
+ /* .about-style-three .content-box .award-box::before {
    position: absolute;
    content: '';
    background-color: #fff;
@@ -11049,15 +11050,15 @@
    height: 100px;
    left: 0px;
    top: 0px;
-   clip-path: polygon(0% 0%, 100% 0%, 0% 100%, 0% 100%, 0% 0%);
- }
+   clip-path: polygon(0% 0%, 100% -50%, -50% 100%, 0% 100%, 0% 0%);
+ } */
 
  .about-style-three .content-box .award-box::after {
    position: absolute;
    content: '';
    background-color: #fff;
-   width: 100px;
-   height: 100px;
+   width: 70px;
+   height: 70px;
    right: 0px;
    bottom: 0px;
    clip-path: polygon(0% 100%, 100% 0%, 100% 100%, 0% 100%, 0% 0%);
