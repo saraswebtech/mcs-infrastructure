@@ -241,12 +241,8 @@
   }
 
   .chooseus-style-two .image-box .image {
-    height: 40%;
-    width: 40%;
-    margin-left: 220px;
-    position: relative;
-    display: block;
-    border-radius: 50%;
+    display: none;
+   
   }
 
   .about-section .content-box .inner-box {
@@ -976,9 +972,9 @@
   }
 
   .chooseus-style-two .image-box {
-    position: relative;
-    display: block;
-    padding-left: 80px;
+   
+    display: none;
+   
   }
 
   .banner-top-section .inner-box h2 {
