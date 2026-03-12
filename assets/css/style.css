@@ -9,7 +9,7 @@
 6. Intro Section
 7. Welcome Section
 9. Cta Section
-8. Research Fields
+8. Research Fields.company-section
 10. Testimonial Section
 11. Researches Section
 12. Team Section
@@ -940,7 +940,7 @@
    position: relative;
    display: flex;
    align-items: center;
-   gap: 50px;
+   gap: 20px;
  }
 
  .main-header .sidebar-toggler {
@@ -5493,7 +5493,7 @@
  }
 
  .footer-bottom .bottom-inner .right-column {
-   padding: 15px 0px 10px 377px;
+   /* padding: 15px 0px 10px 377px; */
  }
 
 
@@ -6288,7 +6288,7 @@
 
  .company-section {
    position: relative;
-   padding-bottom: 575px;
+   padding-bottom: 900px;
  }
 
  .company-section .bg-layer {
@@ -14406,8 +14406,8 @@
  }
 
  .banner-style-two .slide-item {
-   height: 100vh;
-   min-height: 100vh;
+   /* height: 100vh;
+   min-height: 100vh; */
  }
 
  .banner-style-two .bg-layer {
@@ -14415,3 +14415,68 @@
    background-position: center center !important;
    background-repeat: no-repeat !important;
  }
+
+ 
+
+  /* Footer Bottom Styles */
+        .footer-bottom .bottom-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px 0;
+        }
+        
+        .footer-bottom .bottom-inner .left-column {
+            flex: 0 0 auto;
+            text-align: left;
+        }
+        
+        .footer-bottom .bottom-inner .right-column {
+            flex: 0 0 auto;
+            text-align: right;
+        }
+        
+        .footer-bottom .bottom-inner .left-column p,
+        .footer-bottom .bottom-inner .right-column p {
+            margin: 0;
+            font-size: 14px;
+            color: #a5aaaf;
+        }
+        
+        .footer-bottom .bottom-inner .left-column p a,
+        .footer-bottom .bottom-inner .right-column p a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .footer-bottom .bottom-inner .left-column p a:hover,
+        .footer-bottom .bottom-inner .right-column p a:hover {
+            color: var(--theme-color);
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .footer-bottom .bottom-inner {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+            
+            .footer-bottom .bottom-inner .left-column,
+            .footer-bottom .bottom-inner .right-column {
+                text-align: center;
+                width: 100%;
+            }
+            
+            .footer-bottom .bottom-inner .right-column {
+                padding-left: 0;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .footer-bottom .bottom-inner .left-column p,
+            .footer-bottom .bottom-inner .right-column p {
+                font-size: 12px;
+            }
+        }
